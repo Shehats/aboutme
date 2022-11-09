@@ -16,8 +16,8 @@ import { setPageData } from '../effect/setters';
 import { getPost } from '../data/posts';
 
 const sections = [
-  { title: 'About me', url: '/aboutme' },
-  { title: 'Blogs', url: '/blogs' },
+  { title: 'About me', url: '#' },
+  { title: 'Blogs', url: '#' },
 ];
 
 const socialMap: Map<string,any> = new Map();
