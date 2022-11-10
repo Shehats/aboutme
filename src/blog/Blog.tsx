@@ -50,7 +50,7 @@ export default function Blog(props: BlogProps) {
     <ThemeProvider theme={theme}>
       <CssBaseline />
       <Container maxWidth="lg">
-        <Header title="Saleh Shehata" sections={sections} />
+        <Header title="Saleh Shehata" sections={sections} features={props.config.features}/>
         {(props.configLoaded && pageLoaded) ? <main>
           <Grid container spacing={5} sx={{ mt: 3 }}>
             <Main post={ aboutMePost } />

@@ -30,6 +30,11 @@ export interface SidBarModel {
   social: Array<Social>;
 }
 
+export interface Features {
+  [key: string]: boolean;
+  email: boolean;
+}
+
 type About = PostMeta;
 
 export interface Config {
@@ -37,6 +42,7 @@ export interface Config {
   featuredPosts: Array<PostMeta>;
   allPosts: Array<PostMeta>;
   social: Array<Social>;
+  features?: Features;
 }
 
 
