@@ -23,7 +23,7 @@ export default function Main(props: MainProps) {
         },
       }}
     >
-      <Typography variant="h6" gutterBottom>
+      <Typography variant="h6" gutterBottom color="secondary">
         {post.metaData.title}
       </Typography>
       <Divider />

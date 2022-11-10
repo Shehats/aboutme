@@ -34,7 +34,7 @@ export default function Header(props: HeaderProps) {
         <Typography
           component="h2"
           variant="h5"
-          color="inherit"
+          color="primary"
           align="center"
           noWrap
           sx={{ flex: 1 }}

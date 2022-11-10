@@ -25,7 +25,19 @@ socialMap.set('Github', GitHubIcon);
 socialMap.set('Twitter', TwitterIcon);
 socialMap.set('LinkedIn', LinkedInIcon);
 
-const theme = createTheme();
+const theme = createTheme({
+  palette: {
+    mode: 'light',
+    primary: {
+      main: '#718784',
+    },    secondary: {
+      main: '#f50057',
+    },
+    success: {
+      main: '#486949',
+    },
+  },
+});
 
 interface BlogProps {
   config: Config;

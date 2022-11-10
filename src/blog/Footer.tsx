@@ -14,14 +14,14 @@ export default function Footer(props: FooterProps) {
   return (
     <Box component="footer" sx={{ bgcolor: 'background.paper', py: 6 }}>
       <Container maxWidth="lg">
-        <Typography variant="h6" align="center" gutterBottom>
+        <Typography variant="h6" align="center" color="primary" gutterBottom>
           {title}
         </Typography>
         <Typography
           variant="subtitle1"
           align="center"
-          color="text.secondary"
           component="p"
+          color="primary"
         >
           {description}
         </Typography>

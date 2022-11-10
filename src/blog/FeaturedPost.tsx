@@ -22,13 +22,13 @@ export default function FeaturedPost(props: FeaturedPostProps) {
             <Typography component="h2" variant="h5">
               {post.title}
             </Typography>
-            <Typography variant="subtitle1" color="text.secondary">
+            <Typography variant="subtitle1" color="secondary">
               {post.date}
             </Typography>
             <Typography variant="subtitle1" paragraph>
               {post.description}
             </Typography>
-            <Typography variant="subtitle1" color="primary">
+            <Typography variant="subtitle1" color="secondary">
               Continue reading...
             </Typography>
           </CardContent>

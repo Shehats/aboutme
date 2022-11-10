@@ -14,8 +14,8 @@ export default function Sidebar(props: SidebarProps) {
   const { archives, social } = props;
   return (
     <Grid item xs={12} md={4}>
-      <Typography variant="h6" gutterBottom sx={{ mt: 3 }}>
-        Archives
+      <Typography variant="h6" gutterBottom sx={{ mt: 3 }} color="secondary">
+        Links
       </Typography>
       {archives.map((archive) => (
         <Link display="block" variant="body1" href={archive.url} key={archive.title}>
