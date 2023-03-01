@@ -21,6 +21,7 @@ export interface Archive {
 export interface Social {
   name: string;
   icon: any | undefined;
+  url: string;
 }
 
 export interface SidBarModel {
