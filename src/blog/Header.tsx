@@ -31,7 +31,7 @@ const isFeatureEnabled = (feature: string, features?: Features) => {
 export default function Header(props: HeaderProps) {
   const { sections, title } = props;
   return (
-    <React.Fragment>      
+    <React.Fragment>
       <Toolbar sx={{ borderBottom: 1, borderColor: 'divider' }}>
         <Typography
           component="h2"
@@ -51,9 +51,6 @@ export default function Header(props: HeaderProps) {
           </Button> : <span/>
         }
       </Toolbar>
-      <Container>
-      <img src={HeaderBG} style={{ width: "100%", margin: "30px 0" }} />
-      </Container>
       <Toolbar
         component="nav"
         variant="dense"
