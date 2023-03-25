@@ -1,0 +1,58 @@
+{
+  "experience": [
+    {
+      "company": "Plaid Inc",
+      "title": "Software Engineer",
+      "logo": "./plaid-logo.svg",
+      "header": "Mainly a bankend role",
+      "theme": [
+        "Worked on integrating with bank APIs and maintaining them",
+        "Worked on facilitating bank API integrations"
+      ],
+      "color": "#E0FFE1",
+      "height": "80%",
+      "width": "80%"
+    },
+    {
+      "company": "Target",
+      "title": "Senior Software Engineer",
+      "logo": "./target-logo.svg",
+      "header": "Mainly a backend role",
+      "theme": [
+        "Working on creating and maintaining multiple microservices and APIs",
+        "Working on platform to simplify some of the work in the microservices",
+        "Working on queueing systems",
+        "Working on syncing databases acrross different clouds"
+      ],
+      "color": "#FFD7C1",
+      "height": "80%",
+      "width": "80%"
+    },
+    {
+      "company": "Consensus",
+      "title": "Software Engineer",
+      "logo": "./consensus-logo.png",
+      "header": "Mainly a full stack role",
+      "theme": [
+        "Worked on creating and maintaining multiple microservices and APIs",
+        "Created Angularjs pages",
+        "Worked on PHP system"
+      ],
+      "color": "#FFFDC9",
+      "height": "60%",
+      "width": "60%"
+    },
+    {
+      "company": "Taxbit",
+      "title": "Junior Software Engineer",
+      "logo": "./taxbit-logo.svg",
+      "header": "Mainly a frontend role",
+      "theme": [
+        "Worked on Taxbit's frontend"
+      ],
+      "color": "#C9F5FF",
+      "height": "80%",
+      "width": "80%"
+    }
+  ]
+}

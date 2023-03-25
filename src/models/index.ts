@@ -46,4 +46,13 @@ export interface Config {
   features?: Features;
 }
 
-
+export interface Experience {
+  logo: string;
+  height: string;
+  width: string;
+  color: string;
+  company: string;
+  title: string;
+  header: string;
+  theme: Array<string>;
+}
