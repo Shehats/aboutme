@@ -2,14 +2,8 @@ import * as React from 'react';
 import CssBaseline from '@mui/material/CssBaseline';
 import Grid from '@mui/material/Grid';
 import Container from '@mui/material/Container';
-import GitHubIcon from '@mui/icons-material/GitHub';
-import TwitterIcon from '@mui/icons-material/Twitter';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import Header from '../components/Header';
-import { Config, Experience, Post, Social } from '../models';
-import { setPageData } from '../effect/setters';
-import { getPost } from '../data/posts';
 import { Typography } from '@mui/material';
 import PictureBox from '../components/PictureBox';
 import DjangoLogo from '../resources/django-logo.svg'
@@ -29,21 +23,8 @@ import MongoLogo from '../resources/mongodb-logo.svg'
 import MySQLLogo from '../resources/mysql-logo.svg'
 import PostgresLogo from '../resources/postgresql-logo.svg'
 import TerraformLogo from '../resources/terraform-logo.svg'
-import ExperienceCard from '../components/ExperienceCard';
-import PlaidLogo from '../resources/plaid-logo.svg';
 import LandingComponent from '../components/Landing';
-import Footer from '../components/Footer';
 import AppFooter from '../components/Footer';
-
-const sections = [
-  { title: 'About me', url: '#' },
-  { title: 'Blogs', url: '#' },
-];
-
-const socialMap: Map<string, any> = new Map();
-socialMap.set('Github', GitHubIcon);
-socialMap.set('Twitter', TwitterIcon);
-socialMap.set('LinkedIn', LinkedInIcon);
 
 const theme = createTheme({
   palette: {
@@ -60,25 +41,7 @@ const theme = createTheme({
   },
 });
 
-interface BlogProps {
-  config: Config;
-  configLoaded: boolean;
-}
-export default function Blog(props: BlogProps) {
-  const [aboutMePost, setAboutMePost] = React.useState({} as Post);
-  const [social, setSocial] = React.useState(props.config.social);
-  const [pageLoaded, setPageLoaded] = React.useState(false);
-  React.useEffect(() => {
-    const sanitizeData = async () => {
-      await setPageData(getPost, setAboutMePost, props.config.about);
-      setSocial(props.config.social.map((s: Social) => ({
-        ...s,
-        icon: socialMap.has(s.name) ? socialMap.get(s.name) : undefined,
-      })));
-      setPageLoaded(true);
-    };
-    sanitizeData();
-  }, []);
+export default function Blog() {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
@@ -120,10 +83,6 @@ export default function Blog(props: BlogProps) {
         <Grid item><img src={DjangoLogo} /></Grid>
       </Grid>
       <LandingComponent />
-      {/* <Footer
-        title="Sal"
-        description="Human @ Planet Earth"
-      /> */}
       <AppFooter />
     </ThemeProvider>
   );

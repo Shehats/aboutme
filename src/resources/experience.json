@@ -1,8 +1,21 @@
 {
   "experience": [
     {
+      "company": "Ridgeline",
+      "title": "Senior Software Engineer",
+      "logo": "./ridgeline-logo.png",
+      "header": "Mainly a bankend and platform role",
+      "theme": [
+        "Created a new way of creating Github Actions and testing them locally",
+        "Work on processes to facilitate working with challenging architectural problems and safely rollout code"
+      ],
+      "color": "#E1E0FF",
+      "height": "40%",
+      "width": "20%"
+    },
+    {
       "company": "Plaid Inc",
-      "title": "Software Engineer",
+      "title": "Senior Software Engineer",
       "logo": "./plaid-logo.svg",
       "header": "Mainly a bankend role",
       "theme": [

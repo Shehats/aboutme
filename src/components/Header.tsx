@@ -19,14 +19,14 @@ export default function Header() {
         </Typography>
       </Toolbar>
       <Toolbar>
-        <Typography
+        {/* <Typography
           variant='h6'
           component='div'
           marginRight={65}
         >
           About me
-        </Typography>
-        <Typography
+        </Typography> */}
+        {/* <Typography
           variant='h6'
           component='div'
           marginRight={65}
@@ -38,7 +38,7 @@ export default function Header() {
           component='div'
         >
           Blogs
-        </Typography>
+        </Typography> */}
       </Toolbar>
     </NavBar>
 
